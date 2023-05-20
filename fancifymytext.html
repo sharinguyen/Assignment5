@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Fancify Shamcify</title>
+		<!-- link to your script file here -->
+		<script type="text/javascript" src="fancifymytext.js"></script>
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+	
+		<!-- Your UI controls go here -->
+		
+		<fieldset style= "width: 400px;" >
+			<label>Text</label><br>
+			<textarea id = "Text" rows="4" cols="30" value="box"></textarea>
+	</fieldset>
+	<br>
+
+	<fieldset style = "width: 400px;">
+		<label>Fancify<label><br>
+
+			<!--Add button labeled Bigger--> 
+			<br>
+			<button onclick="makeBigger()">Bigger</button>
+
+			<!--The two radio buttons -->
+			<!--Note with the same name for the radio onlyone of them can be selected-->
+			<div>
+			<input type = "radio" id = "FancyShmancy" name = "one" value = "FancyShmancy" onchange = "Fancy()"> 
+			<label>FancyShmancy </label>
+		</div>
+			
+		<div>
+			<input type = "radio" id = "BoringBetty" name = "one" value = "BoringBetty" onchange = "Betty()">
+			<label>BoringBetty</label>
+		</div>
+		</fieldset>
+		<br>
+		
+		<!--Moo button-->
+		<button onclick= "Moo()">Moo</button>
+	</body>
+</html>
